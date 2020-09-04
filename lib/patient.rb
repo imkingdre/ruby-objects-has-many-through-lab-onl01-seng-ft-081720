@@ -1,8 +1,11 @@
 class Patient
-  attr_reader :name, :appointment, :doctor
+  attr_reader :name, :appointment, :doctor, :date
   
   def initialize(name)
     @name=name
+    @doctor = doctor
+    @appointment = appointment
+    @date = date
   end
   
    def new_appointment(doctor, date)
